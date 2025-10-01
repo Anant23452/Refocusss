@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Navbar from './Components/Navbar'
 
 
 function App() {
@@ -6,8 +7,8 @@ function App() {
 
   return (
    <>
-   <div className="bg-gray-900  w-[100vw] h-[100vh] ">
-   
+   <div className="bg-gray-900  w-full  h-screen text-white">
+   <Navbar/>
    </div>
    
    </>
