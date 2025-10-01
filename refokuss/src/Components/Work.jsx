@@ -1,5 +1,13 @@
 import React from 'react'
 
+const images=[
+    {url:"",top:0,left:0,isActive:false},
+    {url:"",top:0,left:0,isActive:false},
+    {url:"",top:0,left:0,isActive:false},
+    {url:"",top:0,left:0,isActive:false},
+    {url:"",top:0,left:0,isActive:false},
+    {url:"",top:0,left:0,isActive:false},
+]
 function Work() {
   return (
     <div className=' w-full '>
