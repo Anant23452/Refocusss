@@ -1,9 +1,9 @@
 import React from 'react'
 import { GoArrowRight } from "react-icons/go";
 
-function Card({width,start,para}) {
+function Card({width,start,para,hover}) {
   return (
-    <div className={`bg-zinc-700 p-5 rounded-xl ${width} min-h-[30rem] flex flex-col justify-between`} >
+    <div className={`bg-zinc-700 p-5 rounded-xl hover:${hover} ${width} min-h-[30rem] flex flex-col justify-between`} >
       <div className="w-full">
           <div className="w-full flex items-center justify-between">
             <h3>one heading</h3>
