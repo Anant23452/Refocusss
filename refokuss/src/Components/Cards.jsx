@@ -4,7 +4,7 @@ import Card from './Card'
 function Cards() {
   return (
     <div className='w-full bg-red-700 '>
-        <div className="w-[70vw] max-w-screen-xl mx-auto bg-green-700 py-20 flex gap-5">
+        <div className="w-[80vw] max-w-screen-xl mx-auto bg-green-700 py-20 flex gap-5">
 
         <Card/>
         <Card/>
