@@ -9,7 +9,9 @@ function Products() {
     ]
   return (
     <div>
-        <Product/>
+        {products.map((item,index)=>{
+            return <Product index={index} item={item} />
+        })}
     </div>
   )
 }
