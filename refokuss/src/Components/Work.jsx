@@ -14,13 +14,27 @@ function Work() {
     {url:"https://i.pinimg.com/736x/1d/e5/29/1de52947cf871b610fb4276053dd137f.jpg",top:"65%",left:"55%",isActive:false},
 ])
    
-    const {scrollY}= useScroll();
-useMotionValueEvent(scrollY, "change", (latest) => {
-  showHideImages(latest);
+    const {scrollYProgress}= useScroll();
+useMotionValueEvent(scrollYProgress, "change", (latest) => {
+  showHideImages(Math.floor(latest*100));
 })
 
 function showHideImages(scrollval){
   console.log(scrollval)
+   switch(scrollval){
+    case 1:
+        console.log(0);
+        break;
+    case 2:
+        console.log(1);
+        break;
+    case 3:
+        console.log(12);
+        break;
+    case 4:
+        console.log(123);
+        break;
+   }
 }
 
   return (
