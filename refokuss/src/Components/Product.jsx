@@ -8,7 +8,8 @@ function Product({item}) {
             <h1 className='text-6xl capitalize font-semibold'>{item.title} </h1>
             <div className="dets w-1/4 bg-gray-800 p-4 rounded-lg">
                 <p>{item.desc} </p>
-                <Button  />
+               {item.live && <Button  />}
+               {item.case && <Button title='case study'  />}
             </div>
         </div>
     </div>
