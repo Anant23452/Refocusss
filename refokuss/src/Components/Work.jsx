@@ -6,7 +6,7 @@ import { motion, useScroll,useMotionValueEvent} from "motion/react"
 function Work() {
     // States 
     const [images,setImages]=useState([
-    {url:"https://cdn.prod.website-files.com/664dc8b6bc52b504509197e4/6867e5af4ce59d080b9ebf42_branding-big.webp",top:"50%",left:"50%",isActive:true},
+    {url:"https://cdn.prod.website-files.com/664dc8b6bc52b504509197e4/6867e5af4ce59d080b9ebf42_branding-big.webp",top:"50%",left:"50%",isActive:false},
     {url:"https://cdn.prod.website-files.com/664dc8b6bc52b504509197e4/66c3bb125095523f5ce87a2a_9.webp",top:"56%",left:"44%",isActive:false},
     {url:"https://cdn.prod.website-files.com/664dc8b6bc52b504509197e4/66c3bb13c9d1cdce681e0e73_10.webp",top:"45%",left:"56%",isActive:false},
     {url:"https://cdn.prod.website-files.com/664dc8b6bc52b504509197e4/66c3bb122fb3c4a2a89a21ed_1.webp",top:"60%",left:"49%",isActive:false},
@@ -17,22 +17,41 @@ function Work() {
     const {scrollYProgress}= useScroll();
 useMotionValueEvent(scrollYProgress, "change", (latest) => {
   showHideImages(Math.floor(latest*100));
+ 
 })
+ function imageShow(arr){
+    setImages(prev=>(
+        prev.map((item,index)=>{
+         return   arr.indexOf(index)===-1?(
+                {...item,isActive:false}
+            ):{...item,isActive:true}
+        })
+    ))
+  }
 
 function showHideImages(scrollval){
 //   console.log(scrollval)
    switch(scrollval){
+    case 0:
+        imageShow([])
+        break;
     case 1:
-        console.log(0);
+        imageShow([0])
         break;
     case 2:
-        console.log(1);
+        imageShow([0,1])
         break;
     case 3:
-        console.log(12);
+        imageShow([0,1,2])
         break;
     case 4:
-        console.log(123);
+        imageShow([0,1,2,3])
+        break;
+    case 6:
+        imageShow([0,1,2,3,4])
+        break;
+    case 8:
+        imageShow([0,1,2,3,4,5])
         break;
    }
 }
