@@ -8,7 +8,7 @@ function Products() {
     {title:"Abhisekh",desc:"Lorem ipsum dolor sit amet consectetur eligendi.",live:true,case:false}
     ]
   return (
-    <div>
+    <div className='bg-gray-900' >
         {products.map((item,index)=>{
             return <Product index={index} item={item} />
         })}
