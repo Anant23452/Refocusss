@@ -20,7 +20,7 @@ useMotionValueEvent(scrollYProgress, "change", (latest) => {
 })
 
 function showHideImages(scrollval){
-  console.log(scrollval)
+//   console.log(scrollval)
    switch(scrollval){
     case 1:
         console.log(0);
