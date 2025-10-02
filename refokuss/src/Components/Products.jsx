@@ -28,7 +28,7 @@ function Products() {
       case: true,
     },
     {
-      title: "Abhisekh",
+      title: "Abhi",
       desc: "Lorem ipsum dolor sit amet consectetur eligendi.",
       live: true,
       case: false,
