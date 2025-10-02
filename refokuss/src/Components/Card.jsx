@@ -12,8 +12,10 @@ function Card() {
         </div>
         <h1 className='text-3xl semibold'>whatever heading</h1>
       </div>
-      <div className="down w-full mt-60">
+      <div className="down w-full mt-60 ">
         <h1 className="text-4xl  font-bold tracking-tight leading-none">Start a project</h1>
+        <button className="rounded-full py-2 px-3 mt-5 border-1 border-zinc-50">Contact Us</button>
+        <p className='text-sm text-zinc-5-- font-medium mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
       </div>
     </div>
   )
