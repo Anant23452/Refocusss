@@ -12,7 +12,7 @@ function Marquees() {
         
     ]
   return (
-    <div className='py-8'>
+    <div className='py-8 mt-10 bg-gray-900'>
         {images.map((items)=><Marquee imageurl={items} />)}
         
     </div>
