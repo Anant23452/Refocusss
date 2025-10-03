@@ -1,13 +1,18 @@
-import React from 'react'
+import { motion } from "motion/react";
+import React from "react";
 import { SlActionRedo } from "react-icons/sl";
 
-function Button({title="Get started"}) {
+function Button({ title = "Get started" }) {
   return (
-    <div className='w-fit px-3 py-2 bg-zinc-100 text-black rounded-full'>
-        <span className="text-sm font-medium">{title}</span>
-        <SlActionRedo className='inline-block ml-2 '/>
-        </div>
-  )
+    <motion.div
+      initial={{ backgroundColor: "#eeeeffff" }} // zinc-100 ka hex
+      whileHover={{ backgroundColor: "gray" }}
+      className="w-fit px-3 py-2  text-black rounded-full"
+    >
+      <span className="text-sm font-medium">{title}</span>
+      <SlActionRedo className="inline-block ml-2 " />
+    </motion.div>
+  );
 }
 
-export default Button
+export default Button;
