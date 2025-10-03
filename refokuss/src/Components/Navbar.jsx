@@ -8,29 +8,24 @@ function Navbar() {
     max-w-screen-xs
      mx-auto 
      py-6
-      bg-gray-900 
+     
       flex 
       items-center
-       w-[70vw]
-        justify-between
-         gap-1
-          px-6
-           border-b-[1px] 
-           border-zinc-500 
-           sm: → small screen
-
-md: → medium screen
-
-lg: → large screen
-
-xl: → extra large screen
-           "
+      w-[70vw]
+      justify-between
+      gap-1
+      px-6
+      border-b-[1px] 
+      border-zinc-500 
+      sm:flex-row sm:gap-4
+      "
+     
     >
-      <div className="nleft flex items-center">
+      <div className="nleft flex items-center  md:flex-row">
         <img
           src="https://i.pinimg.com/736x/92/c9/c4/92c9c49f4e0316573a1c9532eafbc66f.jpg"
           alt=""
-          className="w-[2vw] h-[4vh]  "
+          className="w-[2vw] h-[4vh] sm:w-10 sm:h-10 md:w-12 md:h-12  "
         />
         <div className="links flex gap-10 ml-7">
           {["Home", "About", "Contact", "Blog", "Career"].map((item, index) => (

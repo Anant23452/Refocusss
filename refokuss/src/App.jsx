@@ -18,7 +18,7 @@ function App() {
 
   return (
    <>
-   <div className="bg-gray-900  w-screen  h-screen text-white">
+   <div className="  w-screen  h-screen text-white">
    <Navbar/>
    <Work/>
    <Stripes/>
